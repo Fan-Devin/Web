@@ -1,0 +1,104 @@
+@-moz-document domain("www.baidu.com"), domain("www1.baidu.com") {
+body {
+    overflow-x: hidden;
+    min-width: 600px;
+    font-family: "微软雅黑";
+}
+.wrapper_l #content_left {
+    padding-left: 20px;
+}
+.wrapper_l .s_form {
+    width: 792px !important;
+    margin: 0 auto !important;
+    transform: translatex(-10px);
+}
+.wrapper_l .s_form_wrapper {
+  display: flex;
+}
+.wrapper_l .s_ipt_wr {
+  width: 560px;
+}
+.s_tab,
+.nums,
+.search_tool_conter,
+#rs,
+.to_tieba,
+.to_zhidao_bottom {
+    margin: 0 auto !important;
+}
+.headBlock {
+    margin-left: 0;
+}
+.headBlock > div {
+    margin: auto;
+}
+.head_nums_cont_inner > div {
+    width: 600px;
+}
+.new-pmd .c-border {
+  box-shadow: none;
+  padding-left: 30px;
+}
+.op-musicsong {
+  margin-top: 15px;
+}
+.result > .result, .result-op > .result {
+  margin-bottom: 0 !important;
+  margin-left: 10px;
+}
+#page,
+#s_tab {
+    padding-left: 0px !important;
+    text-align: center !important;
+}
+#container,
+#container.sam_newgrid {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+#content_right {
+    display: none;
+}
+#container.sam_newgrid #content_left {
+    width: 100%;
+}
+#content_left {
+    padding: 0;
+    width: 100%;
+    padding-left: 20px;
+    display: block;
+    counter-reset: results;
+    break-inside: avoid;
+    margin-top: 15px;
+    column-gap: 20px;
+}
+.rrecom-container,
+.xpath-log:not(.c-container) {
+    transform: scale(0);
+}
+@media (min-width: 1201px) and (max-width: 1700px) {
+    #content_left {
+        column-count: 2;
+        -moz-column-count: 2;
+       
+    }
+}
+@media (min-width: 1701px) and (max-width: 2200px) {
+    #content_left {
+        column-count: 3;
+        -moz-column-count: 3;
+       
+    }
+}
+@media (min-width: 2201px) {
+    #content_left {
+        column-count: 4;
+        -moz-column-count: 4;
+       
+    }
+}
+#content_left > *:not([class^="result"]) {
+    position: absolute;
+    margin-top: -1em;
